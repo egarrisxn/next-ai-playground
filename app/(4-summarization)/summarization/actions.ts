@@ -7,7 +7,7 @@ import { z } from "zod";
 export const generateSummary = async (comments: any[]) => {
   const result = await generateObject({
     model: openai("gpt-4o"),
-    prompt: `Please summarise the following comments.
+    prompt: `Please summarize the following comments.
     ---
     Comments:
     ${JSON.stringify(comments)}
